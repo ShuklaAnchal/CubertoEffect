@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    /* cursor: none; */
+    overflow: hidden;
+}
+#first{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 70px;
+}
+#nav{
+    height: 10%;
+    width: 100%;
+    /* background-color: rgb(201, 211, 89); */
+    position: absolute;
+    top: 5%;
+    justify-content: space-between;
+    gap: 20px;
+}
+#nav h4{
+    font-size: 35px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 100; */
+}
+#over{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#over i{
+    font-size: 35px;
+    position: absolute;
+    left: 73.5%;
+    top: 30%;
+   color: #000;
+   z-index: 9;
+}
+#over a{
+    font-size: 20px;
+    color:#000;
+    text-decoration: none;
+    padding-top: 28px;
+}
+#cri{
+    height: 92%;
+    width: 11%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 71%;
+    top: 9%;
+    scale: 0;
+    opacity: 0;
+}
+#cursor{
+    height: 12px;
+    width: 12px;
+    background-color: rgba(7, 7, 66, 0.804);
+    border-radius: 50%;
+    z-index: 99;
+    position: absolute;
+    transition: all linear 0.1s;
+}
+.elm{
+    height:45%;
+    width: 32%;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: center;
+}
+#elm1 h2{
+    position: absolute;
+    top: -12%;
+    left: -9.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:#000000ef;
+    font-size: 22px;
+  mix-blend-mode: overlay;
+}
+.elm video{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    scale: 0;
+    transition: all linear 0.2s;
+    opacity: 0;
+    z-index: -1;
+}
+.elm h1{
+    position: absolute;
+    font-size: 110px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  -webkit-text-stroke-color: #000000a4;
+    -webkit-text-stroke-width: 2px;
+   mix-blend-mode: difference;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color:#00000000;
+   pointer-events: stroke;
+}
